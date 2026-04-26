@@ -4,7 +4,7 @@ export default function About() {
 	return (
 		<section id="about">
 			<div className="about-visual" aria-hidden="true">
-				<Image src="/Foto tuwit.jpg" alt="Foto profil Rafli" fill className="about-photo" />
+				<Image src="/Fototuwit.jpg" alt="Foto profil Rafli" fill className="about-photo" />
 				<div className="about-grid-overlay" />
 				<div className="about-tag-overlay">RAFLI</div>
 			</div>
