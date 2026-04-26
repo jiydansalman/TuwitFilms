@@ -1,0 +1,42 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151515" />
+      <stop offset="1" stop-color="#2A2A2A" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(760 460) rotate(132) scale(700 700)">
+      <stop stop-color="#6B6B6B" stop-opacity="0.32" />
+      <stop offset="1" stop-color="#6B6B6B" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="portrait" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D6D6D6" />
+      <stop offset="1" stop-color="#9D9D9D" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1400" fill="url(#bg)" />
+  <rect width="1200" height="1400" fill="url(#glow)" />
+
+  <g opacity="0.32">
+    <path d="M140 1200C230 1088 372 1016 540 1016C708 1016 850 1088 940 1200" stroke="#C2C2C2" stroke-width="3" />
+    <path d="M540 360C650 360 740 450 740 560C740 670 650 760 540 760C430 760 340 670 340 560C340 450 430 360 540 360Z" fill="url(#portrait)" />
+    <path d="M540 300C708 300 844 436 844 604V1070H236V604C236 436 372 300 540 300Z" stroke="#E0E0E0" stroke-width="2" />
+  </g>
+
+  <g opacity="0.22">
+    <rect x="120" y="180" width="960" height="1040" stroke="#FFFFFF" />
+    <rect x="160" y="220" width="880" height="960" stroke="#FFFFFF" />
+  </g>
+
+  <g opacity="0.08">
+    <path d="M0 140H1200" stroke="#FFFFFF" />
+    <path d="M0 280H1200" stroke="#FFFFFF" />
+    <path d="M0 420H1200" stroke="#FFFFFF" />
+    <path d="M0 560H1200" stroke="#FFFFFF" />
+    <path d="M0 700H1200" stroke="#FFFFFF" />
+    <path d="M0 840H1200" stroke="#FFFFFF" />
+    <path d="M0 980H1200" stroke="#FFFFFF" />
+    <path d="M0 1120H1200" stroke="#FFFFFF" />
+    <path d="M0 1260H1200" stroke="#FFFFFF" />
+  </g>
+</svg>

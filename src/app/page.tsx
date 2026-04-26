@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Marquee from "@/components/marque";
 import Portofolio from "@/components/portofolio";
+import Pricelist from "@/components/pricelist";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Marquee />
       <Portofolio />
       <About />
+      <Pricelist />
       <Footer />
     </main>
   );

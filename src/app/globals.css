@@ -638,20 +638,11 @@ section {
   min-height: 600px;
 }
 
-.about-img-placeholder {
+.about-photo {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #111111 0%, #222222 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-img-letter {
-  font-family: var(--font-display), sans-serif;
-  font-size: 200px;
-  color: rgba(255, 255, 255, 0.04);
-  letter-spacing: -0.02em;
+  object-fit: cover;
+  filter: grayscale(24%) contrast(1.05);
 }
 
 .about-grid-overlay {
@@ -749,6 +740,102 @@ section {
   color: var(--gray-500);
   text-transform: uppercase;
   margin-top: 6px;
+}
+
+/* PRICELIST */
+#pricelist {
+  border-top: 0.5px solid var(--border-soft);
+  background:
+    radial-gradient(circle at 78% 26%, rgba(255, 255, 255, 0.08), transparent 42%),
+    radial-gradient(circle at 12% 88%, rgba(255, 255, 255, 0.06), transparent 36%),
+    #090909;
+}
+
+.pricelist-section {
+  padding: 120px 60px;
+}
+
+.pricelist-head {
+  max-width: 760px;
+  margin-bottom: 56px;
+}
+
+.pricelist-title {
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(44px, 8vw, 94px);
+  line-height: 0.95;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+
+.pricelist-sub {
+  margin-top: 22px;
+  color: var(--gray-300);
+  font-size: 15px;
+  letter-spacing: 0.04em;
+}
+
+.pricelist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.price-card {
+  position: relative;
+  border: 0.5px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+  backdrop-filter: blur(8px);
+  padding: 26px;
+  border-radius: 16px;
+  min-height: 256px;
+}
+
+.price-card.is-highlight {
+  border-color: rgba(255, 255, 255, 0.42);
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.03));
+}
+
+.price-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.price-name {
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(22px, 2.6vw, 34px);
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+.price-tag {
+  font-family: var(--font-mono), monospace;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--gray-300);
+  padding: 7px 10px;
+  border: 0.5px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+}
+
+.price-value {
+  margin-top: 30px;
+  margin-bottom: 16px;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(28px, 4.4vw, 56px);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+.price-desc {
+  color: var(--gray-300);
+  font-size: 14px;
+  line-height: 1.75;
+  max-width: 30ch;
 }
 
 /* FOOTER */
@@ -865,7 +952,8 @@ section {
 
   .portfolio-header,
   .slider-controls,
-  #contact {
+  #contact,
+  #pricelist {
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -886,6 +974,14 @@ section {
     flex-direction: column;
     margin-bottom: 56px;
     padding-bottom: 40px;
+  }
+
+  .pricelist-section {
+    padding: 96px 24px;
+  }
+
+  .pricelist-grid {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
   }
 }
 
@@ -938,6 +1034,14 @@ section {
 
   .contact-heading {
     font-size: clamp(44px, 16vw, 74px);
+  }
+
+  .pricelist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .price-card {
+    min-height: auto;
   }
 
   .social-links {

@@ -1,10 +1,10 @@
+import Image from "next/image";
+
 export default function About() {
 	return (
 		<section id="about">
 			<div className="about-visual" aria-hidden="true">
-				<div className="about-img-placeholder">
-					<div className="about-img-letter">R</div>
-				</div>
+				<Image src="/Foto tuwit.jpg" alt="Foto profil Rafli" fill className="about-photo" />
 				<div className="about-grid-overlay" />
 				<div className="about-tag-overlay">RAFLI</div>
 			</div>
@@ -18,15 +18,9 @@ export default function About() {
 				</h2>
 
 				<p className="about-bio">
-					Halo! Saya Rafli, videografer profesional di balik <strong>TuwitFilms</strong>. Berbasis di
-					Surabaya dengan pengalaman lebih dari 6 tahun di industri kreatif, saya hadir untuk
-					mengubah ide brand kamu menjadi visual yang berkesan dan bermakna.
-					<br />
-					<br />
-					Telah berkolaborasi dengan brand-brand ternama seperti Wuling, Teazzie, Bank Raya, dan banyak lagi, saya mengkhususkan diri dalam pembuatan video iklan, konten media sosial, dan video profil perusahaan. Dengan pendekatan yang kreatif dan perhatian terhadap detail, saya berkomitmen untuk menyampaikan pesan brand kamu dengan cara yang paling efektif dan menarik.
-                    <br />
-                    <br />
-                    Mari kita bawa cerita brand kamu ke level selanjutnya dengan visual yang memukau dan strategi yang tepat sasaran!
+					Saya Rafli dari <strong>TuwitFilms</strong>, videografer asal Surabaya dengan 6+ tahun
+					pengalaman. Fokus saya membantu brand tampil lebih kuat lewat video iklan,
+					company profile, dan konten media sosial yang tepat sasaran.
 				</p>
 
 				<div className="skills-list">
